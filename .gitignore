@@ -1,0 +1,14 @@
+
+*.tif
+ML_InputData/ML_review/drnDens_pts_2018.csv
+ML_InputData/Inundation.csv
+*.csv
+*.cpg
+*.dbf
+*.prj
+*.qmd
+*.shp
+*.shx
+*.zip
+ML_InputData/mltrainingdataset.csv
+*.R
