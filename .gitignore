@@ -12,3 +12,6 @@ ML_InputData/Inundation.csv
 *.zip
 ML_InputData/mltrainingdataset.csv
 *.R
+!/ML_InputData/X_train.csv
+
+!/ML_InputData/y_train.csv
