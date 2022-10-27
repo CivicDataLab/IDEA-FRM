@@ -57,18 +57,19 @@ principalDf.to_csv(results_directory+'PCA_3comp.csv',index=False)
 #t-SNE
 from sklearn.manifold import TSNE
 def tsne_2comp(perplexity_score):
+    print(perplexity_score)
     model = TSNE(n_components = 2, random_state = 0, perplexity=perplexity_score)
     tsne_data = model.fit_transform(X_train)
     tsne_df = pd.DataFrame(tsne_data,columns=['Dim1','Dim2'])
-    tsne_df.to_csv(results_directory+'tsne_2comp_'+perplexity_score+'perplexity'+'.csv',index=False)
+    tsne_df.to_csv(results_directory+'tsne_2comp_'+str(perplexity_score)+'perplexity'+'.csv',index=False)
     return None
 
 def tsne_3comp(perplexity_score):
+    print(perplexity_score)
     model = TSNE(n_components = 3, random_state = 0, perplexity=perplexity_score)
     tsne_data = model.fit_transform(X_train)
     tsne_df = pd.DataFrame(tsne_data,columns=['Dim1','Dim2', 'Dim3'])
-    tsne_df.to_csv(results_directory+'tsne_2comp_'+perplexity_score+'perplexity'+'.csv',index=False)
+    tsne_df.to_csv(results_directory+'tsne_3comp_'+str(perplexity_score)+'perplexity'+'.csv',index=False)
     return None
 
-Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
 Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
