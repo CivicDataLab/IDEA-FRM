@@ -11,8 +11,8 @@ from joblib import Parallel, delayed
 
 
 cwd = os.getcwd()
-data_directory = cwd.replace('Pre-Modelling','')+r'ML_Inputdata//'
-results_directory = cwd+r'//Results//'
+data_directory = cwd.replace('Pre-Modelling','')+r'ML_Inputdata/'
+results_directory = cwd+r'/Results/'
 
 # DEPENDENT VARIABLE
 y = pd.read_csv(data_directory+'y_train.csv')
@@ -70,4 +70,5 @@ def tsne_3comp(perplexity_score):
     tsne_df.to_csv(results_directory+'tsne_2comp_'+perplexity_score+'perplexity'+'.csv',index=False)
     return None
 
+Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
 Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
