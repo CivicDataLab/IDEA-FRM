@@ -11,7 +11,7 @@ from joblib import Parallel, delayed
 
 
 cwd = os.getcwd()
-data_directory = cwd.replace('Pre-Modelling','')+r'ML_Inputdata/'
+data_directory = cwd.replace('Pre-Modelling','')+r'ML_InputData/'
 results_directory = cwd+r'/Results/'
 
 # DEPENDENT VARIABLE
