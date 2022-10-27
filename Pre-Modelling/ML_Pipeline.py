@@ -71,4 +71,4 @@ def tsne_3comp(perplexity_score):
     return None
 
 Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
-Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
+Parallel(n_jobs=4)(delayed(tsne_3comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
