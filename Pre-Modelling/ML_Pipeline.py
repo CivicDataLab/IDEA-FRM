@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib import rcParams
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from joblib import Parallel, delayed
-
+import pacmap
 
 
 cwd = os.getcwd()
@@ -70,5 +70,14 @@ def tsne_3comp(perplexity_score):
     tsne_df.to_csv(results_directory+'tsne_2comp_'+perplexity_score+'perplexity'+'.csv',index=False)
     return None
 
-Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
-Parallel(n_jobs=4)(delayed(tsne_3comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
+#Parallel(n_jobs=4)(delayed(tsne_2comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
+#Parallel(n_jobs=4)(delayed(tsne_3comp)(perplexity_score) for perplexity_score in [10,20,30,40,50,60,70,80,90,100])
+
+#PaCMAP
+print('PaCMAP Begin')
+PaCMP = pacmap.PaCMAP(3, None, 0.5, 2.0)
+transformed = PaCMP.fit_transform(X_train.values)
+pacmap_df = pd.DataFrame(data=transformed,
+                         columns=("Dim_1", "Dim_2","Dim_3"))
+pacmap_df.to_csv(results_directory+'PaCMAP_3comp.csv',index=False)
+
