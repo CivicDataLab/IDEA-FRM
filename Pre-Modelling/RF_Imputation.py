@@ -10,6 +10,7 @@ cwd = os.getcwd()
 data_directory = cwd.replace('Pre-Modelling','')+r'InputData/'
 
 MASTER_2018 = pd.read_csv(data_directory+'SEM_Input_2018.csv')
+print(MASTER_2018.shape)
 one_hot_encoded_data = pd.get_dummies(MASTER_2018, columns = ['assam_soil', 'assam_lith','land use'],
                                      dummy_na=True,drop_first=True)
 
@@ -47,20 +48,10 @@ one_hot_encoded_data.loc[one_hot_encoded_data['land use_nan'] == 1,
                          ]] = np.nan
 del one_hot_encoded_data["land use_nan"]
 
-X = one_hot_encoded_data.drop(['ID','yr'],axis=1)
+X = one_hot_encoded_data.drop(['ID','yr','x','y'],axis=1)
 X = X.replace('U/A', np.nan)
 
 imputer = MissForest(random_state=1337) #miss forest
 X_imputed = imputer.fit_transform(X, cat_vars=np.array(range(74,88,1)))
 X_imputed = pd.DataFrame(X_imputed, columns=X.columns)
 X_imputed.to_csv(data_directory+'SEM_X_Imputed.csv')
-
-
-from sklearn.preprocessing import StandardScaler
-cat_columns = np.array(range(74,88,1))
-X_cat = X_imputed.iloc[:,74:]
-X_con = X_imputed.iloc[:,:74]
-
-X_std_con = StandardScaler().fit_transform(X_con)
-X_std = pd.concat([X_std_con.reset_index(drop=True),X_cat.reset_index(drop=True)],axis=1)
-X_std.to_csv(data_directory+'SEM_X_Imputed_Std.csv')
