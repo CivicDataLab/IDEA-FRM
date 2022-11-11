@@ -1,0 +1,81 @@
+ind_ppp_UNadj: Population in the 100m*100m grid cell
+aged: Elderly Population (65+ age) in the 100m*100m grid cell
+young: Young Population (<5 age) in the 100m*100m grid cell
+sexratio: Number of Females for 1000 Males
+percaay: Population subscribed to AAY (Antyodaya Anna Yojana)
+deprived: Deprived population as described in SECC
+nophone: Households without mobile or landline
+noSanitation: Households without sanitation facilities
+nodrinkingWater: Households without clean drinking water facilities
+totLivestock: Population of livestock
+damage_POPULATION_AFFECTED: Population affected by floods at revenue circle level (FRIMS)
+damage_humanliveslost: Human lives lost due to floods at revenue circle level (FRIMS)
+damage_animalsaffectedtotal: Total number of animals affected by floods at revenue circle level (FRIMS)
+damage_animalsaffectedpoultry: Poultry animals affected by floods at revenue circle level (FRIMS)
+damage_animalsaffectedbig: Big animals affected by floods at revenue circle level (FRIMS)
+damage_animalsaffectedsmall: Small animals affected by floods at revenue circle level (FRIMS)
+damage_animals_washed_total: Total number of animals washed away by floods at revenue circle level (FRIMS)
+damage_animals_washed_poultry: Poultry animals washed away by floods at revenue circle level (FRIMS)
+damage_animals_washed_big: Big animals washed away by floods at revenue circle level (FRIMS)
+damage_animals_washed_small: Small animals washed away by floods at revenue circle level (FRIMS)
+damage_Houses_damaged_fully: Number of houses damaged fully at revenue circle level (FRIMS)
+damage_Houses_damaged_partially: Number of houses damaged partially at revenue circle level (FRIMS)
+damage_croparea_AFFECTED: Crop Area damaged (Hectares) at revenue circle level (FRIMS)
+Embankment: Number of Embankment damages at district level. (FRIMS)
+Other: Number of other infrastructure damages at revenue circle level (FRIMS)
+Road: Number of Road damages at district level. (FRIMS)
+Bridge: Number of Bridge damages at district level. (FRIMS)
+Rice: Government response in form of Rice distributed (FRIMS)
+Salt: Government response in form of Salt distributed (FRIMS)
+Oil:  Government response in form of Oil distributed (FRIMS)
+Dal:  Government response in form of Dal distributed (FRIMS)
+response_inmatesinReliefCamps:  Number of inmates in the relief camps opened by the Government (FRIMS)
+Relief_cam:  Number of relief camps opened by the Government (FRIMS)
+Relief_dis:  Number of relief distribution centres opened by the Government (FRIMS)
+proximity_hosptial_rd: Distance to the nearest hospital (km)
+proximity_embankment_rd: Distance to the nearest Embankment Road (km) 
+proximity_rail_rd: Distance to the nearest Rail road (km)
+proximity_local_rd:Distance to the nearest local road (km) 
+proximity_arterial_rd: Distance to the nearest arterial road (km)
+ndbi: Normalised Differential Built Index
+gmted_drainage_density_without_1: Drainage Density
+srtm_filled_dem: Digital Elevation
+GCN250_ARCIII_average: Surface runoff
+Inundation: Flood persistence of a 30m*30m cell.
+sum: Rainfall across monsoon months at 5km resolution. (District level resolution for the year 2022)
+assam_dist_from_major_rivers_updated_3857: Distance from river (km)
+strm_filled_slope_degrees: Slope map
+ndvi: Normalised Differential Vegetation Index
+Count_Road: Number of tenders related to roads.
+Sum_Roads: Sum of total value of tenders related to roads
+Count_Erosion: Number of tenders related to anti-erosion efforts.
+Sum_Erosion: Sum of total value of tenders related to anti-erosion efforts.
+Count_IM: Number of tenders related to Immediate Measure efforts.
+Sum_IM: Sum of total value of tenders related to Immediate Measure efforts.
+Count_new: Number of tenders related to procurement of new goods and services.
+Sum_new: Sum of total value of tenders related to procurement of new goods and services.
+Count_repair: Number of tenders related to repairs.
+Sum_repair: Sum of total value of tenders related to repairs.
+Count_relief: Number of tenders related to relief efforts.
+Sum_relief: Sum of total value of tenders related to relief efforts.
+Count_goods: Number of tenders related to procurements and goods.
+Sum_goods: Sum of total value of tenders related to procurement goods.
+Count_Total: Total number of tenders.
+Sum_Total: Sum of total value of tenders.
+Count_SDRF: Number of tenders related to SDRF tenders.
+Sum_SDRF: Sum of total value of tenders related to SDRF tenders.
+Count_SOPD: Number of tenders related to SOPD tenders.
+Sum_SOPD: Sum of total value of tenders related to SOPD tenders.
+Count_CIDF: Number of tenders related to CIDF tenders.
+Sum_CIDF: Sum of total value of tenders related to CIDF tenders.
+Count_LTIF: Number of tenders related to LTIF tenders.
+Sum_LTIF: Sum of total value of tenders related to LTIF tenders.
+Count_RIDF: Number of tenders related to RIDF tenders.
+Sum_RIDF: Sum of total value of tenders related to RIDF tenders.
+assam_soil: (Categorical Variable) - soil type.
+assam_lith: (Categorical Variable) - Lithology.
+land use: (Categorical Variable) - Land use category
+x: Latitude
+y: Longitude
+yr: Year of observation
+revenue_ci: Revenue Circle
