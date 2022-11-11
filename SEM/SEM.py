@@ -1,9 +1,13 @@
 import semopy
 import pandas as pd
 import numpy as np
+import os
+
+cwd = os.getcwd()
+data_directory = cwd.replace(r'SEM','')+r'InputData/'
 
 # Read the prepared dataset of measured variables (Xs) after Random Forest Imputation of Null Values, Standardisation and Removal of Anomalies
-X_std_imputed = pd.read_csv('D:/Projects/IDEA-FRM/InputData/SEM_X_Imputed_RemovedAnomalies.csv').drop(['x','y'],axis=1)
+X_std_imputed = pd.read_csv(data_directory+r'SEM_X_Imputed_RemovedAnomalies.csv').drop(['x','y'],axis=1)
 cat_variables = ['assam_soil_loam, silt loam, silt, sandy loam',
        'assam_soil_loamy sand, sand',
        'assam_soil_rocky, other non-soil categories',
@@ -83,12 +87,12 @@ damage_Houses_damaged_fully ~~ damage_Houses_damaged_partially
 model = semopy.Model(model_spec1)
 
 # Fit Model
-model.fit(X_std_imputed.sample(5000),
+model.fit(X_std_imputed,
          obj='WLS',
          solver='SLSQP')
 
 coeff_df = model.inspect()
-coeff_df.to_csv('Results/Model1_Estimates.csv',index=False)
+coeff_df.to_csv(cwd+r'Results/Model1_Estimates.csv',index=False)
 
 stats = semopy.calc_stats(model)
-stats.to_csv('Results/Model1_Stats.csv')
+stats.to_csv(cwd+'Results/Model1_Stats.csv')
