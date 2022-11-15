@@ -10,7 +10,8 @@ data_directory = cwd.replace(r'SEM', '') + r'InputData/'
 
 # Read the prepared dataset of measured variables (Xs) after Random Forest Imputation of Null Values, Standardisation and Removal of Anomalies
 global X_std_imputed
-X_std_imputed = pd.read_csv(data_directory + r'SEM_X_Imputed_RemovedAnomalies3.csv')
+X_std_imputed = pd.read_csv(data_directory + r'SEM_X_Imputed_RemovedAnomalies.csv')
+X_std_imputed.Inundation = np.ceil(X_std_imputed.Inundation)
 
 # Fit Model
 def sem_results(optimiser):
@@ -105,7 +106,7 @@ Count_Erosion ~~ Sum_Erosion"""
     model.fit(X_std_imputed[X_std_imputed.yr==year],
          obj=optimiser,
          solver='SLSQP',
-        #groups=['revenue_ci_enc'] - use it for ModelEffects
+        #groups=['revenue_ci_enc']
               )
 
     coeff_df = model.inspect()
