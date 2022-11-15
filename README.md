@@ -9,9 +9,10 @@ To run the SEM Model on your system, do the following steps:
 4. The Structural Equation Model is present in [SEM](https://github.com/CivicDataLab/IDEA-FRM/tree/main/SEM) folder. 
 
 ## Directory Tree:
-1. [Pre_Modelling](https://github.com/CivicDataLab/IDEA-FRM/tree/main/Pre-Modelling): Codes on Data preparation, Multi-collinearity analysis, Dimensionality Reduction and other preparatory steps before modelling.
-2. [SEM](https://github.com/CivicDataLab/IDEA-FRM/tree/main/SEM): Codes and model specifications related to Structural Equation Modelling (SEM)
-3. [FRIMS](https://github.com/CivicDataLab/IDEA-FRM/tree/main/FRIMS): Various damages due to Floods (population affected, roads damaged, houses damaged etc.,) are collected and organised on the FRIMS portal in the form of PDFs. These PDFs are scraped, cleaned and organised in excel sheets to enable temporal analysis.
+1. [FRIMS](https://github.com/CivicDataLab/IDEA-FRM/tree/main/FRIMS): Various damages due to Floods (population affected, roads damaged, houses damaged etc.,) are collected and organised on the FRIMS portal in the form of PDFs. These PDFs are scraped, cleaned and organised in excel sheets to enable temporal analysis.
+2. [Maps](https://github.com/CivicDataLab/IDEA-FRM/tree/main/Maps): Administrative boundaries of Assam.
+3. [Procurement Data](https://github.com/CivicDataLab/IDEA-FRM/tree/main/ProcurementData): Floods related tenders issued by the Assam Government are geocoded and organised here.
+4. [SEM](https://github.com/CivicDataLab/IDEA-FRM/tree/main/SEM): Codes and model specifications related to Structural Equation Modelling (SEM)
 
 ## Contributors:
 <a href="https://github.com/CivicDataLab/2022-Assam-Flood-Response/graphs/contributors">
