@@ -15,3 +15,5 @@ ML_InputData/mltrainingdataset.csv
 !/ML_InputData/X_train.csv
 
 !/ML_InputData/y_train.csv
+/Pre-Modelling/
+/InputData/
