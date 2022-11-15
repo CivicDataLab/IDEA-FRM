@@ -20,17 +20,7 @@ We do this by onboarding governments to international data standards for curatin
 
 [Will be updated once the repository is made public]
 
-## Publication Policy:
-This document consist of following sections
-* Purpose of the publication
-* [OCDS](https://standard.open-contracting.org/latest/en/) Dataset Creation
-* Tender: Gives detailed description of fields of tender stage for contracting data
-* Award: Gives detailed description of fields of award stage for contracting data
-* Extensions
-* License
-Please find link to document [here](https://docs.google.com/document/d/1UBL1Oe3JtrVFd65Df6NzeDI_Qsh5xpwY51DVK1YImG4/edit?usp=sharing)
-
 ## License:
 All content in this repository is licensed under
-[![CC-BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](LICENSE.md)
+[![CC-BY](https://i.creativecommons.org/l/by/4.0/88x31.png)](LICENSE.md)
 
