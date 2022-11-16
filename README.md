@@ -14,11 +14,28 @@ We do this by onboarding governments to international data standards for curatin
 5. [government_response](https://github.com/CivicDataLab/IDEA-FRM/tree/main/government_response): Government response before, during and after disaster is principal while proposing any solution. We are looking through the lens of such expenditure, as seen in [government procurement data](assamtenders.gov.in), budget data and relief distributed (as reported in FRIMS).
 
 ## Contributors:
-<a href="https://github.com/CivicDataLab/2022-Assam-Flood-Response/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CivicDataLab/2022-Assam-Flood-Response" />
+<a href="https://github.com/jeenogeorge">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQFxHPsuUXf0Ow/profile-displayphoto-shrink_400_400/0/1651489686328?e=1674086400&v=beta&t=cF6D2RysRSSdiybLBknZpGEgc41sA2uPOlAeRi_SASA"  width="50" height="50" >
+</a>
+<a href="https://github.com/shreyaagrawal0809">
+  <img src="https://avatars.githubusercontent.com/u/35596028?v=4"  width="50" height="50" >
+</a>
+<a href="https://github.com/d-saikrishna">
+  <img src="https://avatars.githubusercontent.com/u/46342902?v=4"  width="50" height="50" >
+</a>
+<a href="https://github.com/sphanidatta">
+  <img src="https://avatars.githubusercontent.com/u/66291142?v=4"  width="50" height="50" >
+</a>
+<a href="https://github.com/Kabeer3">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQGGXFSv_ZlywA/profile-displayphoto-shrink_400_400/0/1517569174510?e=1674086400&v=beta&t=J_bUMfWPQLtMKx8PpHPb5Wp2rA5yeSymLcJAbEQ4bio"  width="50" height="50" >
+</a>
+<a href="https://github.com/gggodhwani">
+  <img src="https://avatars.githubusercontent.com/u/2306011?v=4"  width="50" height="50" >
+</a>
+<a href="https://github.com/Mohak91">
+  <img src="https://media-exp1.licdn.com/dms/image/C5103AQGbR4MpaDQz_g/profile-displayphoto-shrink_400_400/0/1564171390950?e=1674086400&v=beta&t=T8QHBrgevK5nifUxlaKQwS87rS8FrvST6QGd4inSgKE"  width="50" height="50" >
 </a>
 
-[Will be updated once the repository is made public]
 
 ## License:
 All content in this repository is licensed under
